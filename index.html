@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Телефонная книга</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+  <div class="phone-book">
+    <header>
+      <h1>Телефонная книга</h1>
+      <input type="text" id="search" placeholder="Поиск контактов...">
+    </header>
+
+    <ul id="contact-list"></ul>
+
+    <button id="add-contact-btn">Добавить</button>
+
+    <div id="modal" class="modal hidden">
+      <form id="add-contact-form">
+        <h2>Добавить контакт</h2>
+        <label>
+          Имя:
+          <input type="text" id="name" required>
+        </label>
+        <label>
+          Телефон:
+          <input type="text" id="phone" required>
+        </label>
+        <label>
+          <input type="checkbox" id="favorite">
+          Добавить в избранное
+        </label>
+        <button type="submit">Создать</button>
+        <button type="button" id="close-modal">Закрыть</button>
+      </form>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
